@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
 
+gem 'rails_12factor', group: :production
+
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
@@ -18,10 +20,12 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
 gem 'mail_form'
+gem 'simple_form'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
@@ -34,6 +38,7 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -45,3 +50,4 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+#ruby 2.1.8

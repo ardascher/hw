@@ -1,6 +1,7 @@
 class ResearchesController < ApplicationController
 	
 	def new
+    @research = Research.new
   end
 
   def show
@@ -16,6 +17,13 @@ class ResearchesController < ApplicationController
  
   	@research.save
   	redirect_to @research
+  end
+
+  def destroy
+    @research = Research.find(params[:id])
+    @research.destroy
+ 
+    redirect_to researches_path         
   end
 
   private
