@@ -1,0 +1,18 @@
+<h1>Listing of our researches</h1>
+ 
+<table>
+  <tr>
+    <th>Name:</th>
+    <th>Period of execution:</th>
+    <th>Cost:</th>
+  </tr>
+ 
+  <% @researches.each do |research| %>
+    <tr>
+      <td><%= research.name %></td>
+      <td><%= research.period_of_execution %></td>
+      <td><%= research.cost %></td>
+      <td><%= link_to 'Buy this research', research_path(research) %></td>
+    </tr>
+  <% end %>
+</table>

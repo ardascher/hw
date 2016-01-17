@@ -1,0 +1,37 @@
+<h1>Order form</h1>
+
+<table>
+		<tr>
+  		<th>Name:</th>
+  		<th>Period of execution:</th>
+  		<th>Cost:</th>
+		</tr>
+		<tr>  
+			<td><%= @research.name %></td>
+			<td><%= @research.period_of_execution %></td>
+			<td><%= @research.cost %></td>
+		</tr>
+</table>
+
+<%= form_for :customers, url: customers_path do |f| %>
+  <p>
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </p>
+
+  <p>
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </p>
+
+  <p>
+    <%= f.label :e_mail %><br>
+    <%= f.text_field :e_mail %>
+  </p>
+
+
+
+  <p>
+    <%= f.submit "Create Order" %>
+  </p>
+<% end %>
