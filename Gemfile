@@ -27,6 +27,7 @@ gem 'jquery-rails'
 
 gem 'mail_form'
 gem 'simple_form'
+gem 'puma'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
