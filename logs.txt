@@ -1,0 +1,101 @@
+2016-01-17T17:48:29.891000+00:00 app[web.1]: 
+2016-01-17T17:48:29.890999+00:00 app[web.1]:   app/views/researches/index.html.erb:10:in `_app_views_researches_index_html_erb___4070274743160141724_70051273222920'
+2016-01-17T17:48:29.891000+00:00 app[web.1]: 
+2016-01-17T17:48:29.884083+00:00 app[web.1]: Processing by ResearchesController#index as HTML
+2016-01-17T17:48:29.887894+00:00 app[web.1]: Completed 500 Internal Server Error in 4ms
+2016-01-17T17:50:47.565707+00:00 app[web.1]: Started GET "/" for 109.169.237.118 at 2016-01-17 17:50:47 +0000
+2016-01-17T17:50:47.568443+00:00 app[web.1]: Processing by ResearchesController#index as HTML
+2016-01-17T17:50:47.570886+00:00 app[web.1]: PG::UndefinedTable: ERROR:  relation "researches" does not exist
+2016-01-17T17:50:47.571920+00:00 app[web.1]: Completed 500 Internal Server Error in 3ms
+2016-01-17T17:50:47.570889+00:00 app[web.1]: LINE 1: SELECT "researches".* FROM "researches"
+2016-01-17T17:50:47.570891+00:00 app[web.1]: : SELECT "researches".* FROM "researches"
+2016-01-17T17:50:47.574252+00:00 app[web.1]: 
+2016-01-17T17:50:47.570890+00:00 app[web.1]:                                    ^
+2016-01-17T17:50:47.571792+00:00 app[web.1]:   Rendered researches/index.html.erb within layouts/application (2.7ms)
+2016-01-17T17:50:47.574256+00:00 app[web.1]: LINE 1: SELECT "researches".* FROM "researches"
+2016-01-17T17:50:47.574257+00:00 app[web.1]:                                    ^
+2016-01-17T17:50:47.574257+00:00 app[web.1]: : SELECT "researches".* FROM "researches"):
+2016-01-17T17:50:47.574255+00:00 app[web.1]: ActionView::Template::Error (PG::UndefinedTable: ERROR:  relation "researches" does not exist
+2016-01-17T17:50:47.574258+00:00 app[web.1]:      7:     <th>Cost:</th>
+2016-01-17T17:50:47.574259+00:00 app[web.1]:      8:   </tr>
+2016-01-17T17:50:47.574260+00:00 app[web.1]:      9:  
+2016-01-17T17:50:47.574260+00:00 app[web.1]:     10:   <% @researches.each do |research| %>
+2016-01-17T17:50:47.574261+00:00 app[web.1]:     11:     <tr>
+2016-01-17T17:50:47.574262+00:00 app[web.1]:     13:       <td><%= research.period_of_execution %></td>
+2016-01-17T17:50:47.574262+00:00 app[web.1]:     12:       <td><%= research.name %></td>
+2016-01-17T17:50:47.574263+00:00 app[web.1]:   app/views/researches/index.html.erb:10:in `_app_views_researches_index_html_erb___4070274743160141724_70051273222920'
+2016-01-17T17:50:47.574265+00:00 app[web.1]: 
+2016-01-17T17:50:47.574264+00:00 app[web.1]: 
+2016-01-17T17:50:47.571964+00:00 heroku[router]: at=info method=GET path="/" host=advhw.herokuapp.com request_id=c0e85959-a56e-428d-8542-11d0f70c7175 fwd="109.169.237.118" dyno=web.1 connect=1ms service=14ms status=500 bytes=1458
+2016-01-17T17:55:43.000685+00:00 heroku[router]: at=info method=GET path="/" host=advhw.herokuapp.com request_id=efab3cd7-b144-4b32-a46a-b7cd53bf7393 fwd="109.169.237.118" dyno=web.1 connect=1ms service=21ms status=500 bytes=1458
+2016-01-17T17:55:42.989666+00:00 app[web.1]: Started GET "/" for 109.169.237.118 at 2016-01-17 17:55:42 +0000
+2016-01-17T17:55:42.993451+00:00 app[web.1]: Processing by ResearchesController#index as HTML
+2016-01-17T17:55:42.997463+00:00 app[web.1]: PG::UndefinedTable: ERROR:  relation "researches" does not exist
+2016-01-17T17:55:42.997467+00:00 app[web.1]: LINE 1: SELECT "researches".* FROM "researches"
+2016-01-17T17:55:42.997468+00:00 app[web.1]:                                    ^
+2016-01-17T17:55:42.997468+00:00 app[web.1]: : SELECT "researches".* FROM "researches"
+2016-01-17T17:55:42.998565+00:00 app[web.1]:   Rendered researches/index.html.erb within layouts/application (3.5ms)
+2016-01-17T17:55:42.998661+00:00 app[web.1]: Completed 500 Internal Server Error in 5ms
+2016-01-17T17:55:43.003520+00:00 app[web.1]: 
+2016-01-17T17:55:43.003523+00:00 app[web.1]: ActionView::Template::Error (PG::UndefinedTable: ERROR:  relation "researches" does not exist
+2016-01-17T17:55:43.003540+00:00 app[web.1]: LINE 1: SELECT "researches".* FROM "researches"
+2016-01-17T17:55:43.003541+00:00 app[web.1]:                                    ^
+2016-01-17T17:55:43.003542+00:00 app[web.1]: : SELECT "researches".* FROM "researches"):
+2016-01-17T17:55:43.003543+00:00 app[web.1]:      7:     <th>Cost:</th>
+2016-01-17T17:55:43.003543+00:00 app[web.1]:      8:   </tr>
+2016-01-17T17:55:43.003544+00:00 app[web.1]:      9:  
+2016-01-17T17:55:43.003545+00:00 app[web.1]:     10:   <% @researches.each do |research| %>
+2016-01-17T17:55:43.003545+00:00 app[web.1]:     11:     <tr>
+2016-01-17T17:55:43.003546+00:00 app[web.1]:     12:       <td><%= research.name %></td>
+2016-01-17T17:55:43.003546+00:00 app[web.1]:     13:       <td><%= research.period_of_execution %></td>
+2016-01-17T17:55:43.003548+00:00 app[web.1]:   app/views/researches/index.html.erb:10:in `_app_views_researches_index_html_erb___4070274743160141724_70051273222920'
+2016-01-17T17:55:43.003549+00:00 app[web.1]: 
+2016-01-17T17:55:43.003549+00:00 app[web.1]: 
+2016-01-17T17:58:54.973363+00:00 heroku[router]: at=info method=GET path="/" host=advhw.herokuapp.com request_id=65b70a5f-0ff2-49b4-ab8e-eb27077658b1 fwd="109.169.237.118" dyno=web.1 connect=1ms service=12ms status=500 bytes=1458
+2016-01-17T17:58:54.965146+00:00 app[web.1]: Started GET "/" for 109.169.237.118 at 2016-01-17 17:58:54 +0000
+2016-01-17T17:58:54.972549+00:00 app[web.1]: PG::UndefinedTable: ERROR:  relation "researches" does not exist
+2016-01-17T17:58:54.972552+00:00 app[web.1]: LINE 1: SELECT "researches".* FROM "researches"
+2016-01-17T17:58:54.972553+00:00 app[web.1]:                                    ^
+2016-01-17T17:58:54.972554+00:00 app[web.1]: : SELECT "researches".* FROM "researches"
+2016-01-17T17:58:54.973244+00:00 app[web.1]:   Rendered researches/index.html.erb within layouts/application (5.2ms)
+2016-01-17T17:58:54.973349+00:00 app[web.1]: Completed 500 Internal Server Error in 6ms
+2016-01-17T17:58:54.975146+00:00 app[web.1]: 
+2016-01-17T17:58:54.975148+00:00 app[web.1]: ActionView::Template::Error (PG::UndefinedTable: ERROR:  relation "researches" does not exist
+2016-01-17T17:58:54.975149+00:00 app[web.1]: LINE 1: SELECT "researches".* FROM "researches"
+2016-01-17T17:58:54.975150+00:00 app[web.1]:                                    ^
+2016-01-17T17:58:54.975151+00:00 app[web.1]: : SELECT "researches".* FROM "researches"):
+2016-01-17T17:58:54.975152+00:00 app[web.1]:      7:     <th>Cost:</th>
+2016-01-17T17:58:54.975152+00:00 app[web.1]:      8:   </tr>
+2016-01-17T17:58:54.975153+00:00 app[web.1]:      9:  
+2016-01-17T17:58:54.975154+00:00 app[web.1]:     10:   <% @researches.each do |research| %>
+2016-01-17T17:58:54.975154+00:00 app[web.1]:     11:     <tr>
+2016-01-17T17:58:54.975155+00:00 app[web.1]:     12:       <td><%= research.name %></td>
+2016-01-17T17:58:54.975156+00:00 app[web.1]:     13:       <td><%= research.period_of_execution %></td>
+2016-01-17T17:58:54.975157+00:00 app[web.1]:   app/views/researches/index.html.erb:10:in `_app_views_researches_index_html_erb___4070274743160141724_70051273222920'
+2016-01-17T17:58:54.975157+00:00 app[web.1]: 
+2016-01-17T17:58:54.975158+00:00 app[web.1]: 
+2016-01-17T17:58:54.967368+00:00 app[web.1]: Processing by ResearchesController#index as HTML
+2016-01-17T18:09:33.504812+00:00 heroku[router]: at=info method=GET path="/" host=advhw.herokuapp.com request_id=f8a8ebbd-8715-4c3a-aa8c-74f5ec371d53 fwd="109.169.237.118" dyno=web.1 connect=1ms service=11ms status=500 bytes=1458
+2016-01-17T18:09:33.486696+00:00 app[web.1]: Started GET "/" for 109.169.237.118 at 2016-01-17 18:09:33 +0000
+2016-01-17T18:09:33.490894+00:00 app[web.1]: PG::UndefinedTable: ERROR:  relation "researches" does not exist
+2016-01-17T18:09:33.490896+00:00 app[web.1]: LINE 1: SELECT "researches".* FROM "researches"
+2016-01-17T18:09:33.490897+00:00 app[web.1]:                                    ^
+2016-01-17T18:09:33.490898+00:00 app[web.1]: : SELECT "researches".* FROM "researches"
+2016-01-17T18:09:33.491354+00:00 app[web.1]:   Rendered researches/index.html.erb within layouts/application (2.0ms)
+2016-01-17T18:09:33.491428+00:00 app[web.1]: Completed 500 Internal Server Error in 3ms
+2016-01-17T18:09:33.493525+00:00 app[web.1]: 
+2016-01-17T18:09:33.493528+00:00 app[web.1]: ActionView::Template::Error (PG::UndefinedTable: ERROR:  relation "researches" does not exist
+2016-01-17T18:09:33.493529+00:00 app[web.1]: LINE 1: SELECT "researches".* FROM "researches"
+2016-01-17T18:09:33.493529+00:00 app[web.1]:                                    ^
+2016-01-17T18:09:33.493530+00:00 app[web.1]: : SELECT "researches".* FROM "researches"):
+2016-01-17T18:09:33.493531+00:00 app[web.1]:      7:     <th>Cost:</th>
+2016-01-17T18:09:33.493531+00:00 app[web.1]:      8:   </tr>
+2016-01-17T18:09:33.493532+00:00 app[web.1]:      9:  
+2016-01-17T18:09:33.493533+00:00 app[web.1]:     10:   <% @researches.each do |research| %>
+2016-01-17T18:09:33.493533+00:00 app[web.1]:     11:     <tr>
+2016-01-17T18:09:33.493534+00:00 app[web.1]:     12:       <td><%= research.name %></td>
+2016-01-17T18:09:33.493534+00:00 app[web.1]:     13:       <td><%= research.period_of_execution %></td>
+2016-01-17T18:09:33.493536+00:00 app[web.1]:   app/views/researches/index.html.erb:10:in `_app_views_researches_index_html_erb___4070274743160141724_70051273222920'
+2016-01-17T18:09:33.493536+00:00 app[web.1]: 
+2016-01-17T18:09:33.493537+00:00 app[web.1]: 
+2016-01-17T18:09:33.488742+00:00 app[web.1]: Processing by ResearchesController#index as HTML
